@@ -1,3 +1,26 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Dance Party</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="lib/jquery.js"></script>
+    <script src="src/dancer.js"></script>
+    <script src="src/blinkyDancer.js"></script>
+    <script src="src/funnyDancer.js"></script>
+    <script src="src/ultimateDancer.js"></script>
+  </head>
+  <body>
+    <div class="topbar">
+      <span class="title">object dance party</span>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
+      <a id="ultimate" href="#" class="addDancerButton" data-dancer-maker-function-name="makeUltimateDancer">add an ultimate dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeFunnyDancer">add a funny dancer</a>    </div>
+      <span class="reindeer"><img src="#">reindeer</span>
+    <script src="src/init.js"></script>
+    <script>
+    </script>
+  </body>
+</html> -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,6 +35,32 @@
     <div class="topbar">
       <span class="title">object dance party</span>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+    <img id = "reindeer" src = "reindeer.jpg">
+    <h2>click the reindeer</h2>
     <script src="src/init.js"></script>
+  <script>
+  $(document).ready(function() {
+    $("#reindeer").click(
+    
+    function(){
+      $("#reindeer").animate({
+      right : '+=1350px'
+      }, 5000)
+      
+      $("#reindeer").animate({
+      right : '0px'
+      }, 5000)
+      
+    });
+    
+     $(".dancer").click(
+     function() {
+     console.log("moved");
+      $(".dancer").animate({
+      right : '+=200px'
+      }, 2000)
+    });
+  });
+  </script>
   </body>
 </html>

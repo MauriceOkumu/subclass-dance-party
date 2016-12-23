@@ -33,7 +33,7 @@ makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 
  // var oldStep = makeDancer.prototype.step;
 
-  var oldStep = makeDancer.prototype.step;
+var oldStep = makeDancer.prototype.step;
 makeBlinkyDancer.prototype.step = function () {
   oldStep.call(this); 
   this.$node.toggle();

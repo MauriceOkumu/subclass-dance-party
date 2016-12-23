@@ -1,10 +1,11 @@
-body, html{
+/*body, html{
   height:100%;
 }
 body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url("http://www.hdbloggers.net/wp-content/uploads/2016/09/Cool-Wallpaper-Background-8.jpg")
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -21,7 +22,49 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
   border-radius:10px;
   position:absolute;
+  background: transparent;
+  opacity:28%;
+}
+#eye{
+  width:20%;
+  background-color:white;
+}*/
+body, html{
+  height:90%;
+}
+body{
+  margin: 0px;
+  background-color:#444;
+  font-size: 18px;
+  background-image: url("background.png");
+  background-size: 100%
+}
+body, a:link, a:visited, a:active{
+  color: lightblue;
+}
+.title, .addDancerButton{
+  padding:5px 12px;
+  float:right;
+}
+.topbar{
+  height:32px;
+  background-color: #555;
+}
+.title{
+  background-color: #777;
+}
+.dancer{
+  position:relative;
+  mix-blend-mode: multiply;
+}
+
+#reindeer {
+  mix-blend-mode: multiply;
+  position: relative;
+  float: right;
+}
+h2{
+  color:blue;
 }
